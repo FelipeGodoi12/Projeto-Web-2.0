@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>          
+            <button type="submit">Cadastrar</button><br><br> 
+            <button id="clear">Limpar Campos</button><br><br>
+        </form>
+
+        <h2>Lista de Usuários cadastrados</h2>
+        <button id="clearAll" >Excluir Todos</button><br><br>
+        <input type="text" id="busca" placeholder="Pesquisar...">
+        <ul id="lista"></ul>
+        
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
